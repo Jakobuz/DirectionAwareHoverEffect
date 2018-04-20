@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "./node_modules/.bin/webpack --mode development",
+    "watch": "./node_modules/.bin/webpack --mode development --watch",
     "build": "./node_modules/.bin/webpack --mode production"
   },
   "repository": {
@@ -21,8 +22,8 @@
     "depending",
     "thumbnails"
   ],
-  "author": "Ryan Turner",
-  "license": "ISC",
+  "author": "Ryan Turner <ryanturnerwebdev@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ryanturner10/DirectionAwareHoverEffect/issues"
   },
