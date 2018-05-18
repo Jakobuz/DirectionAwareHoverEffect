@@ -115,11 +115,12 @@ class HoverDirClass {
 
     _getOffset(elem) {
         const rect = elem.getBoundingClientRect();
-        const bodyEl = document.body;
+        const bodyScrollTop = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop);
+        const bodyScrollLeft = Math.max(window.pageXOffset, document.documentElement.scrollLeft, document.body.scrollLeft);
 
         return {
-            top: rect.top + bodyEl.scrollTop,
-            left: rect.left + bodyEl.scrollLeft
+            top: rect.top + bodyScrollTop,
+            left: rect.left + bodyScrollLeft
         }
     }
 
@@ -162,8 +163,6 @@ class HoverDirClass {
             slideFromRight = {transform: 'translateY(0) translateX(100%)'},
             slideTop = {transform: 'translateY(0)'},
             slideLeft = {transform: 'translateX(0)'};
-
-
 
         switch (direction) {
             case 0:
