@@ -1,6 +1,6 @@
 {
   "name": "hover-dir",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vanilla JS directional aware hover effect",
   "main": "./src/HoverDir.js",
   "scripts": {
